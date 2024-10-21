@@ -1,0 +1,213 @@
+Navigation In Linux: 
+
+Navigation in Linux: 
+
+Commands List: 
+
+- ls 
+
+- cd 
+
+- pwd 
+
+- dir 
+
+- mkdir 
+
+- rmdir 
+
+- ip 
+
+- tracepath 
+
+- ss 
+
+- dig 
+
+- host 
+
+- hostname 
+
+- mtr 
+
+- nano 
+
+ 
+
+2. Command Details: 
+
+`ls`  
+
+Purpose: Lists the contents of a directory. 
+
+Usage: `ls` for basic listing, `ls -l` for detailed listing, `ls -a` to include hidden files. 
+
+Notes: Essential for quickly viewing what's in the current directory. 
+
+ 
+
+`cd` 
+
+ Purpose: Changes the current directory. 
+
+ Usage: `cd [directory path]` to move to a specific directory, `cd ..` to move up one directory level, `cd` or `cd ~` to return to the home directory. 
+
+Notes: Most used for navigating through the filesystem. 
+
+ 
+
+`pwd` 
+
+Purpose: Prints the current directory path. 
+
+Usage: `pwd` to display the full path of the current directory. 
+
+Notes: Useful for confirming your current location in the filesystem. 
+
+ 
+
+`dir` 
+
+Purpose: Searching files in a directory. 
+
+Usage: `dir [file name] 
+
+ 
+
+`mkdir` 
+
+Purpose: Creates a new directory. 
+
+Usage: `mkdir [directory name]` to create a new directory in the current location. 
+
+Notes: Handy for organizing files into new folders. 
+
+ 
+
+ 
+
+`rmdir` 
+
+Purpose: Removes a directory. 
+
+Usage: `rmdir [directory name]` to delete an empty directory. 
+
+Notes: Used for cleaning up and removing unused directories. Note that the directory must be empty. 
+
+   
+
+'Ip' 
+
+Purpose: Helps view and configure routing, interfaces, network devices, and tunnels. 
+
+Usage: ip [options] object [command] 
+
+[Options] : The command-line parameters that modify the command's behavior. 
+
+Object: Represents the available objects for configuration. 
+
+[Command] :  Is a subcommand, an action performed on an object. The available commands differ depending on the object. 
+
+ 
+
+'Tracepath' 
+
+Purpose: The command identifies paths and latencies from source to destination, mapping the router and network hops. 
+
+Usage: tracepath [options] [hostname/IP] 
+
+The additional [options] control the query behavior, such as the number of hops and whether to perform a reverse DNS lookup for the addresses. The [hostname/IP] field is required and represents the destination. 
+
+ 
+
+'Ss' 
+
+Purpose: The ss command is a CLI tool for displaying network statistics. The tool is part of the iproute2 package and is a faster alternative to the netstat command. 
+
+Usage: Use the ss command to examine network sockets and view various network-related data. 
+
+ss [options] [filter] : The [options] parameter allows filtering sockets by protocol, while the [filter] parameter helps queue sockets by state to narrow down the result view. 
+
+For example, to show all listening TCP sockets using the ss command, add the -lt options: 'ss -lt' 
+
+ 
+
+'Dig' 
+
+Purpose: The dig command queries Domain Name Systems (DNS) and finds information for DNS records. The command collects domain name information and associated records. 
+
+Usage: Use dig to troubleshoot DNS issues and to verify DNS configuration on a Linux system. It is suitable for creating scripts and automating tasks related to network troubleshooting. The robust command is so prevalent in network troubleshooting that a Windows version of dig is available. 
+
+dig [options] [domain] [record type] [DNS server] 
+
+ 
+
+The components of the command are: 
+
+[options] - Parameters that modify the behavior of the command. 
+
+[domain] - The domain name to query. 
+
+[record type] - The DNS record type to query. Defaults to A records. 
+
+[DNS server] - A specified DNS server for the query. 
+
+ 
+
+'Host' 
+
+Purpose: The host command is a simple tool for performing DNS lookups. The command resolves IP addresses into domain names and vice versa. 
+
+Usage: The various [options] control the command's behavior, such as the query type or the start of authority (SOA) for the provided domain. 
+
+Example: To perform a simple DNS lookup, use the host command and provide a hostname or IP address. For example: host google.com 
+
+ 
+
+'Hostname' 
+
+Purpose: The hostname command helps display and change a system's hostname and domain and identifies devices within a network environment. 
+
+Usage: Use the command to display, change, or search for hostnames. The syntax for the hostname command is: 
+
+'hostname [options] [name]' 
+
+The [options] parameter control what the command displays, while the [name] parameter temporarily sets the hostname to the provided name. 
+
+Example: To temporarily change the system hostname, run the command without any options and provide a name: 
+
+'sudo hostname [name]' 
+
+ 
+
+'Mtr' 
+
+Purpose: The mtr command (my traceroute) is a diagnostics tool that combines elements from the ping and traceroute commands. The command sends real-time insights into network quality, making it an excellent tool for troubleshooting high latency and packet loss. 
+
+Usage: The syntax for the mtr command is: 
+
+'mtr [options] [hostname/IP]' 
+
+The [options] parameter controls the packet number and size, while the [hostname/IP] parameter contains the destination. 
+
+Example: The mtr command, without any parameters, starts a trace session to the provided host. For example: 'mtr google.com' 
+
+ 
+
+‘nano’ 
+
+Purpose: Provides a simple and user-friendly text editor for Linux. It serves a command-line interface text editor, which allows users to create and modify text files directly from the terminal. 
+
+Usage: Used for creating and editing text files. Some use cases for nano are: 
+
+Quick text edits, editing configuration files, scripting, learning and teaching, and etc. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
